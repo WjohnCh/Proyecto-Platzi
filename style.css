@@ -1,0 +1,146 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --small: 14px;
+    --medium: 16px;
+    --long: 18px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+*{
+    text-decoration: none;
+    color: var(--black);            
+}
+.navbar-principal{
+    --padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 3px solid var(--text-input-field);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    box-sizing: border-box;
+}
+.menu{
+    display: none;
+}
+.navbar-principal .accesos-directos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-principal .accesos-directos img{
+    height: 30px;
+}
+.navbar-principal .accesos-directos .colecciones{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-evenly;
+}
+.navbar-principal .accesos-directos .colecciones li{
+    padding: 4px 16px 4px 16px;
+    border: 2px solid var(--white);
+}
+.navbar-principal .accesos-directos .colecciones li:hover {
+    border-radius: 10px;
+    border: 2px solid var(--hospital-green);
+}
+.navbar-principal .accesos-directos .colecciones li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+}
+.navbar-principal .accesos-directos .colecciones  li:hover a{
+    color: var(--hospital-green);
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-right a:first-child{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: var(--medium);
+    color: var(--black);
+}
+.navbar-right a:first-child figure{
+    margin: 4px 0px 0px 10px;
+    transform: rotate(90deg);
+}
+.navbar-right a:last-child img{
+    height: 30px;
+}
+
+/* ESTILOS DEL DESPLEGABLE */
+
+.desktop-menu{
+    position: absolute;
+    top: 48px;
+    right: 100px;
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--text-input-field);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.desktop-menu ul{
+    list-style: none;
+    font-weight: bold;
+    text-align: end;
+    padding: 0;
+    margin: 0;
+}   
+.desktop-menu ul li:nth-child(3) {
+    font-size: var(--small);
+    border-top: 1px solid var(--text-input-field);
+    padding-top:16px;
+}   
+.desktop-menu ul li:nth-child(3) a{
+    color: var(--hospital-green);
+}
+.desktop-menu ul li:nth-child(-n+2) {
+    margin-bottom: 24px;
+    font-size: var(--medium);
+    /* Otros estilos específicos */
+}
+
+@media (max-width: 640px) {
+    .navbar-principal{
+        --padding: 20px;
+        justify-content: space-between;
+    }
+    .navbar-principal .accesos-directos .colecciones{
+        display: none;
+    }
+    .navbar-right a:first-child{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+
+/* RECICLAJE */
+
+.inactive{
+    display: none;
+}

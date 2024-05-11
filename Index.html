@@ -6,28 +6,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Interfaz General</title>
-    <style>
-        :root{
-            --white: #FFFFFF;
-            --black: #000000;
-            --dark: #232830;
-            --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --hospital-green: #ACD9B2;
-            --small: 14px;
-            --medium: 16px;
-            --long: 18px;
-        }
+    <link rel="stylesheet" href="style.css">
+    <title>YardSale</title>
 
-        body{
-            margin: 0;
-            font-family: 'Quicksand', sans-serif;
-
-        }
-    </style>
 </head>
 <body>
+    <nav class="navbar-principal">
+        <a class="menu" href="">
+            <img src="/Platzi_YardSale_Icons/icon_menu.svg" alt="">
+        </a>
+        <div class="accesos-directos">
 
+            <img src="/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="">
+            <ul class="colecciones">
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Furniture</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+                <a href="#" id="narvar-right-a">
+                    camilayokoo@gmail.com
+                    <figure>
+                        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="">
+                    </figure>
+                </a>
+                <a href="  ">
+                    <img src="./Platzi_YardSale_Icons/icon_shopping_cart_notification.svg" alt="">
+                </a>
+        </div>
+<!-- MENÚ DESPLEGABLE -->
+        <div class="desktop-menu inactive" id="desktop-menu">
+            <ul >
+                <li>
+                    <a href="">My orders</a>
+                </li>
+                <li>
+                    <a href="">My account</a>
+                </li>
+                <li>
+                    <a href="">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="./script.js"></script>
 </body>
 </html>
