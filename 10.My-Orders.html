@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Interfaz General</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --small: 14px;
+            --medium: 16px;
+            --long: 18px;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        p{
+            margin: 0;
+        }
+        .main-conteiner{
+            --distance: 450px;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 100px auto;
+            place-items: end center;
+        }
+        .main-conteiner h1{
+            font-size: var(--long);
+            width: var(--distance);
+            font-weight: bold;
+            padding: 14px;
+            box-sizing: border-box;
+        }
+        .secundary-conteiner{
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            width: var(--distance);
+            gap: 24px;
+        }
+        .secundary-conteiner .info-total{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            padding: 18px 14px 18px 14px;
+            /* box-sizing: border-box; */
+        }
+        .secundary-conteiner .info-total > p{
+            display: flex;
+            flex-direction: column;      
+            color: var(--very-light-pink);
+            font-size: var(--small);
+            margin-top: 4px;
+        }
+        .secundary-conteiner .info-total > p  span:first-child{
+            color: var(--black);
+            font-weight: bold;
+        }
+        .secundary-conteiner .info-total > div{
+            display: flex;
+            justify-content: space-between;
+            width: 90px;
+            font-weight: bold;
+        }
+        @media (max-width:640px){
+            .main-conteiner{
+            --distance: 350px;
+        }
+            .main-conteiner h1{
+                text-align: center ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-conteiner">
+        <h1>My orders</h1>
+        <div class="secundary-conteiner">
+            <div class="info-total">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <div>
+                    <p>$ 120.00</p>
+                    <a href="">
+                        <img src="/Platzi_YardSale_Icons/flechita.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        <div class="secundary-conteiner">
+            <div class="info-total">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <div>
+                    <p>$ 120.00</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="">
+                </div>
+            </div>
+        <div class="secundary-conteiner">
+            <div class="info-total">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <div>
+                    <p>$ 120.00</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="">
+                </div>
+            </div>
+        <div class="secundary-conteiner">
+            <div class="info-total">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <div>
+                    <p>$ 120.00</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="">
+                </div>
+            </div>
+        <div class="secundary-conteiner">
+            <div class="info-total">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <div>
+                    <p>$ 120.00</p>
+                    <img src="/Platzi_YardSale_Icons/flechita.svg" alt="">
+                </div>
+            </div>
+    </div>
+</body>
+</html>

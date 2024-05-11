@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Interfaz General</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --small: 14px;
+            --medium: 16px;
+            --long: 18px;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        p{
+            margin: 0;
+        }
+        .main-conteiner{
+            --distance: 450px;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 100px auto;
+            place-items: end center;
+        }
+        .main-conteiner h1{
+            font-size: var(--long);
+            width: var(--distance);
+            font-weight: bold;
+        }
+        .secundary-conteiner{
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            width: var(--distance);
+            gap: 24px;
+        }
+        .secundary-conteiner .info-total{
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            align-items: center;
+            border-radius: 20px;
+            padding: 18px 14px 18px 14px;
+            box-sizing: border-box;
+            background-color: var(--text-input-field);
+        }
+        .secundary-conteiner .info-total div p:last-child{
+            color: var(--very-light-pink);
+            font-weight:lighter;
+            font-size: var(--small);
+            margin-top: 4px;
+        }
+        .info-product{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-product div{
+            display: flex;
+            align-items: center;
+        }
+        .info-product img + p{
+             margin-left: 20px;color: var(--very-light-pink);
+             color: var(--very-light-pink);
+             font-size: var(--small);
+        }
+        .info-product div + p{
+            font-weight: bold;
+            font-size: var(--medium);
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        @media (max-width:640px){
+            .main-conteiner{
+            --distance: 350px;
+        }
+            .main-conteiner h1{
+                text-align: center ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-conteiner">
+        <h1>My order</h1>
+        <div class="secundary-conteiner">
+                <div class="info-total">
+                    <div> <!--Para la próxima poner <span>...</span>-->
+                        <p>04.25.2021</p>
+                        <p>6 articles</p>
+                    </div>
+                    <p>$ 560.00</p>
+                </div>
+                <div class="info-product">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

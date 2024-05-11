@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Interfaz General</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --small: 14px;
+            --medium: 16px;
+            --long: 18px;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        /* .main-container{
+            display: grid;
+            align-items: end;
+            width:100%;
+            height: 100vh;
+        } */
+
+        .cards-container{
+            --size-card: 250px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--size-card));
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card{
+            width: var(--size-card);
+        }
+        .product-card > img{
+            width: var(--size-card);
+            height: var(--size-card);
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .info-product{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+        .info-product figure{
+            margin: 0px;
+        }
+        .info-product p:nth-child(1)
+        {
+            font-weight: bold;
+            font-size: var(--medium);
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        .info-product p:nth-child(2)
+        {
+            margin-top: 0px;
+            color: var(--very-light-pink);
+            font-size: var(--small);
+            margin-bottom: 0px;
+        }
+        @media (max-width: 640px){
+            .cards-container{
+                --size-card:140px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p class="Precio">$35,00</p>
+                        <p class="Descripcion" > Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+            <div class="product-card">
+                <img class="Img" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <div class="info-product">
+                    <div>
+                        <p>$35,00</p>
+                        <p>Round Shelf</p>
+                    </div>
+                    <figure>
+                        <img src="/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+           </div>
+        </div>
+    </section>
+</body>
+</html>
