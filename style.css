@@ -136,9 +136,73 @@ body{
         display: block;
     }
 }
+/* menu-mobile */
+.menu-principal-mobile{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: calc(100vh - 50px);
+    width: 70%;
+    padding: 18px 18px 18px 44px;
+    box-sizing: border-box;
+    background-color: var(--text-input-field);
+}
+.categorias h1{
+    font-size: var(--long);
+}
+.menu-principal-mobile ul{
+   list-style: none;
+   padding: 0;
+}
+.menu-principal-mobile a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--medium);
+}
+.menu-principal-mobile a:hover{
+    background-color: var(--text-input-field);
+    border-radius: 10px;
+}
+.menu-principal-mobile a:active{
+    background-color: var(--very-light-pink);
+    border-radius: 10px;
+}
+.menu-principal-mobile .menu-cuentas{
+    border-top: 1px solid var(--text-input-field);
+    padding-top: 16px;
+}
+.cuentas ul:last-child p
+{
+    padding-top: 44px;
+    font-size: var(--small);
+}
+.cuentas ul:last-child p a
+{
+    font-size: var(--small);
+    color: var(--hospital-green);
+}
+ /* BUSCAR SOLUCION PARA EL DISEÑO RESPONSIVO*/
+.cuentas ul:last-child{
+    position: absolute;
+    bottom: 24px;
+}
 
+@media (max-width: 640px) {
+   .desktop-menu{
+    display: none;
+   } 
+}
 
-
+@media (min-width: 641px) {
+    .menu-principal-mobile{
+     display: none;
+    } 
+ }
 /* RECICLAJE */
 
 .inactive{
