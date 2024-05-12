@@ -24,6 +24,7 @@ body{
     border: none;
 }
 .navbar-principal{
+    position: fixed;
     --padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -125,22 +126,6 @@ body{
     margin-bottom: 24px;
     font-size: var(--medium);
     /* Otros estilos específicos */
-}
-
-@media (max-width: 640px) {
-    .navbar-principal{
-        --padding: 20px;
-        justify-content: space-between;
-    }
-    .navbar-principal .accesos-directos .colecciones{
-        display: none;
-    }
-    .navbar-right a:first-child{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
 }
 /* menu-mobile */
 .menu-principal-mobile{
@@ -268,45 +253,13 @@ button.primary-button{
     border-radius: 6px;
     cursor: pointer;
 }
-@media (max-width:640px){
-    .main-conteiner{
-    width: 100%;
-}
-    .main-conteiner .header-container{
-        justify-content: center;
-    }
-    .main-conteiner .header-container img.flechita{
-        display: none;
-    }
-}
 
 
-@media (max-width: 640px) {
-   .desktop-menu{
-    display: none;
-   } 
-}
 
-@media (min-width: 641px) {
-    .menu-principal-mobile{
-     display: none;
-    } 
- }
-/* RECICLAJE */
 
-.inactive{
-    display: none;
-}
 
-.modal-general{
-    top: 0px;
-    right: 0px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-}
+
+/* ESTILOS DE LOS PRODUCTOS */
 
 .cards-container{
     --size-card: 250px;
@@ -347,8 +300,60 @@ button.primary-button{
     font-size: var(--small);
     margin-bottom: 0px;
 }
-@media (max-width: 640px){
+
+/* RECICLAJE */
+
+.inactive{
+    display: none;
+}
+
+.modal-general{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100%;
+}
+
+/* MEDIA QUERIS */
+
+@media (max-width: 640px) {
+    .main-conteiner{
+        width: 100%;
+    }
+    .main-conteiner .header-container{
+        justify-content: center;
+    }
+    .main-conteiner .header-container img.flechita{
+        display: none;
+    }
+
+   #menu-desktop-desplegable{
+    display: none;
+   } 
+
+   .navbar-principal{
+    --padding: 20px;
+    justify-content: space-between;
+    }
+    .navbar-principal .accesos-directos .colecciones{
+        display: none;
+    }
+    .navbar-right a:first-child{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
     .cards-container{
         --size-card:140px;
     }
 }
+
+@media (min-width: 641px) {
+    .menu-principal-mobile{
+     display: none;
+    } 
+ }
