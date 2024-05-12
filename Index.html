@@ -15,49 +15,51 @@
         <a class="menu" href="#" id="menu-navbar-mobile">
             <img src="./Platzi_YardSale_Icons/icon_menu.svg" alt="">
         </a>
-<!-- menú desktop mobile -->
-        <div class="menu-principal-mobile inactive">
-            <div class="categorias">
-                <h1>
-                    CATEGORIES
-                </h1>
-                <ul>
-                    <li>
-                        <a href="">All</a>
-                    </li>
-                    <li>
-                        <a href="">Clothes</a>
-                    </li>
-                    <li>
-                        <a href="">Electronics</a>
-                    </li>
-                    <li>
-                        <a href="">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="">Toys</a>
-                    </li>
-                    <li>
-                        <a href="">Others</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cuentas">
-                <ul class="menu-cuentas">
+<!-- menú  mobile -->
+        <div class="modal-general inactive" id="menu-mobile-desplegable">
+            <div class="menu-principal-mobile">
+                <div class="categorias">
+                    <h1>
+                        CATEGORIES
+                    </h1>
+                    <ul>
                         <li>
-                            <a href="">My orders</a>
+                            <a href="">All</a>
                         </li>
                         <li>
-                            <a href="">My account</a>
+                            <a href="">Clothes</a>
                         </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>camilayokoo@gmail.com
-                            <a href="">Sign up</a>
-                        </p> 
-                    </li>
-                </ul>
+                        <li>
+                            <a href="">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="">Furniture</a>
+                        </li>
+                        <li>
+                            <a href="">Toys</a>
+                        </li>
+                        <li>
+                            <a href="">Others</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cuentas">
+                    <ul class="menu-cuentas">
+                            <li>
+                                <a href="">My orders</a>
+                            </li>
+                            <li>
+                                <a href="">My account</a>
+                            </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>camilayokoo@gmail.com
+                                <a href="">Sign up</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 <!-- Accesos directos desktop -->
@@ -92,25 +94,79 @@
                         <img src="./Platzi_YardSale_Icons/flechita.svg" alt="">
                     </figure>
                 </a>
-                <a href="  ">
+                <a href="#" id="carrito-compras">
                     <img src="./Platzi_YardSale_Icons/icon_shopping_cart_notification.svg" alt="">
                 </a>
         </div>
 <!-- MENÚ DESPLEGABLE -->
-        <div class="desktop-menu inactive" id="desktop-menu">
-            <ul >
-                <li>
-                    <a href="">My orders</a>
-                </li>
-                <li>
-                    <a href="">My account</a>
-                </li>
-                <li>
-                    <a href="">Sign out</a>
-                </li>
-            </ul>
+        <div class="modal-general inactive" id="menu-desktop-desplegable">
+            <div class="desktop-menu" id="desktop-menu">
+                <ul >
+                    <li>
+                        <a href="">My orders</a>
+                    </li>
+                    <li>
+                        <a href="">My account</a>
+                    </li>
+                    <li>
+                        <a href="">Sign out</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+    <!-- CARRITO DE COMPRAS - DESPLEGABLE -->
+    <div class="modal-general inactive" id="carrito-compras-desplegable">
+        <div class="main-conteiner">
+            <div class="header-container">
+                <img src="./Platzi_YardSale_Icons/flechita.svg" alt=""class="flechita" id="flechita">
+                <h1>Shooping cart</h1>
+            </div>
+            <div class="secundary-conteiner">
+                <div class="info-product flexAlineado">
+                    <div class="flexAlineado">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product flexAlineado">
+                    <div class="flexAlineado">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product flexAlineado">
+                    <div class="flexAlineado">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product flexAlineado">
+                    <div class="flexAlineado">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+                <div class="info-product flexAlineado">
+                    <div class="flexAlineado">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        <p>Round shelf</p>
+                    </div>
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="total flexAlineado">
+                <p>Total</p>
+                <p>$560.00</p>
+            </div>
+            <button class="primary-button">Checkout</button>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
