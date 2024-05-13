@@ -36,6 +36,7 @@ body{
     padding-right: var(--padding);
     box-sizing: border-box;
     background-color: var(--white);
+    top: 0px;
 }
 .menu{
     display: none;
@@ -96,7 +97,6 @@ body{
 .desktop-menu{
     background-color: var(--white);
     position: absolute;
-    top: 48px;
     right: 100px;
     width: 100px;
     height: auto;
@@ -130,13 +130,12 @@ body{
 /* menu-mobile */
 .menu-principal-mobile{
     position: absolute;
-    top: 50px;
     left: 0px;
     height: calc(100vh - 50px);
     width: 70%;
     padding: 18px 18px 18px 44px;
     box-sizing: border-box;
-    background-color: var(--text-input-field);
+    background-color: var(--white);
 }
 .categorias h1{
     font-size: var(--long);
@@ -187,13 +186,12 @@ body{
 .main-conteiner{
     position: absolute;
     right: 0px;
-    top: 50px;
     height: calc(100vh - 50px);
     display: grid;
     grid-template-rows: auto 1fr auto auto;
     width: 400px;
     padding: 40px 20px ;
-    background-color: var(--text-input-field);
+    background-color: var(--white);
 }
 .main-conteiner .header-container img.flechita{
     height: 24px;
@@ -254,14 +252,9 @@ button.primary-button{
     cursor: pointer;
 }
 
-
-
-
-
-
 /* ESTILOS DE LOS PRODUCTOS */
-
 .cards-container{
+    margin-top: 80px;
     --size-card: 250px;
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--size-card));
@@ -308,11 +301,11 @@ button.primary-button{
 }
 
 .modal-general{
-    top: 0px;
+    top: 50px;
     right: 0px;
     position: absolute;
     background-color:rgba(0, 0, 0, 0.1);
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100%;
 }
 
